@@ -13,11 +13,20 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body> 
 
+<img class="wave" src="img/pay.png" style="width:100%;height:100%;opacity: 0.7">
+    	
+	<section id="contact" style="position: absolute;top: 8%;left: 5%;right: 100%;trasform: translate(-80%,-80%);width: 1200px;height: 1400px;box-sizing: border-box;background: rgba(0,0,0,0.1);padding: px;"	>
+            <div class="container"style="color:black;font-weight: bold;font-weight: 600;" >
+                <div class="row">
+                    <div class="col-md-6" style="margin-top: 50px;">
+                            
+                    </div>
+
 
                     
                     
 <div class="container"><div class="row"><div class="col-6"> 
-<h1>Payment Details</h1>
+<h1 style="margin-left:600px;">Payment Details</h1>
 <form id="formItem" name="formItem" method="post" action="payment_company.jsp">
  Payment Number: 
  <input id="paymentNo" name="paymentNo" type="text" 

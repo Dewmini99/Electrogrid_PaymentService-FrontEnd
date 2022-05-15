@@ -37,13 +37,9 @@ box-shadow:0 0 10px #228B22;
 	z-index: -1;
 }
 
-.h1{
-    text-align: center;
-    margin-top: 30px;
-    color: green;
-    
-    font-family: 'Poppins', sans-serif;
-}
+
+
+
 
 .img{
 	display: flex;
