@@ -6,21 +6,14 @@ pageEncoding="ISO-8859-1"%>
 <head>
 <meta charset="ISO-8859-1">
 <title>Payment Details</title>
-<link rel="stylesheet" type="text/css" href="Register.css">
+<link rel="stylesheet" type="text/css" href="Pay.css">
 <link rel="stylesheet" href="Views/bootstrap.min.css">
 <script src="Components/jquery-3.6.0.min.js"></script>
 <script src="Components/payment_company.js"></script>
 </head>
 <body> 
 
-<img class="wave" src="img/pay.png" style="width:100%;height:100%;opacity: 0.7">
-    	
-	<section id="contact" style="position: absolute;top: 8%;left: 5%;right: 100%;trasform: translate(-80%,-80%);width: 1200px;height: 1400px;box-sizing: border-box;background: rgba(0,0,0,0.1);padding: px;"	>
-            <div class="container"style="color:black;font-weight: bold;font-weight: 600;" >
-                <div class="row">
-                    <div class="col-md-6" style="margin-top: 50px;">
-                            
-                    </div>
+
                     
                     
 <div class="container"><div class="row"><div class="col-6"> 

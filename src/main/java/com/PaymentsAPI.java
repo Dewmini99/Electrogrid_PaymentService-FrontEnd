@@ -71,10 +71,11 @@ public class PaymentsAPI extends HttpServlet {
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		Map paras = getParasMap(request); 
-		String output = paymentObj.deletePayment(	paras.get("paymentID").toString()); 
+		String output = paymentObj.deletePayment(paras.get("paymentID").toString()); 
 		response.getWriter().write(output);
 	}
 	
+
 	// Convert request parameters to a Map
 	private static Map getParasMap(HttpServletRequest request) 
 	{ 
@@ -97,6 +98,7 @@ public class PaymentsAPI extends HttpServlet {
 		 } 
 		return map; 
 		}
+	
 }
 	
 

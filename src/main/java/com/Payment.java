@@ -98,7 +98,7 @@ public class Payment
 		 String units = rs.getString("units"); 
 		 // Add into the html table
 		 output += "<tr><td><input id='hidItemIDUpdate' name='hidItemIDUpdate' type='hidden' value='"+paymentID+"'>"+paymentID+"</td>"; 
-		 output += "<td>" + companyName + "</td>"; 
+         output += "<td>" + companyName + "</td>"; 
 		 output += "<td>" + amount + "</td>"; 
 		 output += "<td>" + units + "</td>"; 
 		 // buttons

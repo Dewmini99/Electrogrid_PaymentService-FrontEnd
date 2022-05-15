@@ -1,3 +1,12 @@
+$(document).ready(function(){ 
+	if ($("#alertSuccess").text().trim() == "") 
+ 	{ 
+ 		$("#alertSuccess").hide(); 
+    } 
+ 	$("#alertError").hide(); 
+}); 
+
+
 $(document).on("click", "#btnSave", function(event)
 { 
 // Clear alerts---------------------
@@ -30,6 +39,9 @@ var type = ($("#hidItemIDSave").val() == "") ? "POST" : "PUT";
 
 function onItemSaveComplete(response, status)
 { 
+
+location.reload();
+
 if (status == "success") 
  { 
  var resultSet = JSON.parse(response); 
@@ -60,7 +72,8 @@ $("#formItem")[0].reset();
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event)
 		{ 
-		$("#hidItemIDSave").val($(this).data("paymentID")); 
+		 
+		$("#hidItemIDSave").val($(this).data("itemid"));
 		 $("#paymentNo").val($(this).closest("tr").find('td:eq(0)').text()); 
 		 $("#companyName").val($(this).closest("tr").find('td:eq(1)').text()); 
 		 $("#amount").val($(this).closest("tr").find('td:eq(2)').text()); 
@@ -77,7 +90,7 @@ $(document).on("click", ".btnRemove", function(event)
 		 { 
 		 url : "PaymentsAPI", 
 		 type : "DELETE", 
-		 data : "paymentID=" + $(this).data("paymentID"),
+		 data : "paymentID=" + $(this).data("itemid"),
 		 dataType : "text", 
 		 complete : function(response, status) 
 		 { 
@@ -88,6 +101,9 @@ $(document).on("click", ".btnRemove", function(event)
 		
 function onPaymentDeleteComplete(response, status)
 { 
+
+location.reload();
+
 if (status == "success") 
  { 
  var resultSet = JSON.parse(response); 
